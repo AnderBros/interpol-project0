@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <section id="video-header">
+        <div class="absolute">
+            <h1 class="oswald">INTERPOL</h1>
+        </div>
+        <video muted="muted" autoplay loop>
+            <source src="{{ url_for('static', filename='videos/LIGHTS - INTERPOL.mp4') }}">
+        </video>
+    </section>
+
+    <section id="ep">
+        <!--<div class="row container">
+            <div class="col-md-6">
+                <img class="img-fluid" src="{{ url_for('static', filename='images/A_FINE_MESS_EP.jpg')}}" alt="" sizes="" srcset="">
+            </div>
+            <div class="col-md-6">
+              <div id="ep-info">
+                <h1 class="oswald">A FINE MESS</h1>
+                <h3 class="raleway"> THE NEW EP</h3>
+              </div>
+            </div>
+        </div>-->
+        <h1 class="oswald title">A FINE MESS - THE NEW EP</h1>
+            <div class="division"></div>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; max-width: 860px; margin-top: 50px;">
+            <div style="position: relative; z-index: 0;">
+                <img class="img-fluid" src="{{ url_for('static', filename='images/A_FINE_MESS_EP.jpg')}}" alt="" sizes="" srcset="">
+            </div>
+            <div style="position: relative; z-index: 0;">
+                <ul>
+					<li>
+						<a class="btn" href="http://smarturl.it/afinemess" target="_blank">
+							Get it now
+						</a>
+					</li>
+					<li>
+						<a class="btn" href="https://open.spotify.com/user/interpolofficial/playlist/13jmMqowyfmkYQ8jZqFXai?si=zWKaYv1NQtKljxQgwxBABA" target="_blank">
+							Spotify
+						</a>
+					</li>
+					<li>
+						<a class="btn" href="https://geo.itunes.apple.com/us/album/a-fine-mess-ep/1455135768?ls=1&at=1001lPXx&ct=SmartUrl&app=music" target="_blank">
+							Apple Music
+						</a>
+					</li>
+					<li>
+						<a class="btn" href="https://www.amazon.com/gp/product/B07PGM68TK/?tag=matadrecor-20" target="_blank">
+							Amazon Music
+						</a>
+					</li>
+					<li>
+						<a class="btn" href="https://shop.interpolnyc.com/" target="_blank">
+							Official Store
+						</a>
+					</li>
+				</ul>
+            </div>
+        </div>
+    </section>
+{% endblock %}

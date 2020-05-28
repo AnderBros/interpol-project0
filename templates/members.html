@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <section class="block-white" style="width: auto; height: auto; padding: 0; margin: 0;">
+        <div class="inner">
+            <h1 class="oswald title">MEMBERS</h1>
+            <div class="division"></div>
+            <h2 class="block-description raleway">
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in piece of classical.
+            </h2>
+            <div class="container" style="margin-top: 50px; margin-bottom: 50px;">
+                <div class="members row">
+                    <figure class="col-xl-4 col-lg-4 col-md-4 col-sm-12"><img src="{{ url_for('static', filename='images/paul-banks.jpg')}}"  alt="" class="img-fluid"><h2 class="oswald text-center" data-toggle="modal" data-target="#modalPaulBanks">PAUL BANKS</h2></figure>
+                    <figure class="col-xl-4 col-lg-4 col-md-4 col-sm-12"><img src="{{ url_for('static', filename='images/daniel-kessler.jpg')}}" alt="" class="img-fluid"><h2 class="oswald text-center" data-toggle="modal" data-target="#modalDanielKessler">DANIEL KESSLER</h2></figure>
+                    <figure class="col-xl-4 col-lg-4 col-md-4 col-sm-12"><img src="{{ url_for('static', filename='images/sam-fogarino.jpg')}}" alt="" class="img-fluid"><h2 class="oswald text-center" data-toggle="modal" data-target="#modalSamFogarino">SAM FOGARINO</h2></figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalPaulBanks" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title oswald" id="exampleModalScrollableTitle">PAUL BANKS</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="row modal-body">
+          <div class="col-md-6">
+              <img src="{{ url_for('static', filename='images/paul-banks.jpg')}}" alt="" class="img-fluid" title="">
+          </div>
+          <div class="col-md-6">
+              <h4 class="oswald">REAL NAME</h4>
+              <h5 class="raleway">Paul Julian Banks Plenti</h5>
+              <h4 class="oswald">BIRTH</h4>
+              <h5 class="raleway">May 3, 1978</h5>
+              <h4 class="oswald">OCCUPATION</h4>
+              <h5 class="raleway">Singer and guitarist</h5>
+              <h4 class="oswald">BIOGRAPHY</h4>
+              <h5 class="raleway">Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. Voluptatum blanditiis tenetur nihil nesciunt ad optio harum atque numquam deserunt vel modi, 
+                asperiores itaque unde voluptas nam reprehenderit. Alias, ipsa adipisci!Cumque porro tempora facilis quisquam quam id enim sequi. 
+                Sunt cumque laudantium eaque, sit, architecto modi, hic perspiciatis assumenda excepturi vitae nostrum suscipit maxime molestiae 
+                rem eius ipsum? Natus, consequatur.
+              </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalDanielKessler" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title oswald" id="exampleModalScrollableTitle">DANIEL KESSLER</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="row modal-body">
+          <div class="col-md-6">
+              <img src="{{ url_for('static', filename='images/daniel-kessler.jpg')}}" alt="" class="img-fluid" title="">
+          </div>
+          <div class="col-md-6">
+              <h4 class="oswald">REAL NAME</h4>
+              <h5 class="raleway">Daniel Alexander Kessler</h5>
+              <h4 class="oswald">BIRTH</h4>
+              <h5 class="raleway">September 25, 1974</h5>
+              <h4 class="oswald">OCCUPATION</h4>
+              <h5 class="raleway">Guitarist</h5>
+              <h4 class="oswald">BIOGRAPHY</h4>
+              <h5 class="raleway">Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. Voluptatum blanditiis tenetur nihil nesciunt ad optio harum atque numquam deserunt vel modi, 
+                asperiores itaque unde voluptas nam reprehenderit. Alias, ipsa adipisci!Cumque porro tempora facilis quisquam quam id enim sequi. 
+                Sunt cumque laudantium eaque, sit, architecto modi, hic perspiciatis assumenda excepturi vitae nostrum suscipit maxime molestiae 
+                rem eius ipsum? Natus, consequatur.
+              </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalSamFogarino" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title oswald" id="exampleModalScrollableTitle">SAM FOGARINO</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="row modal-body">
+          <div class="col-md-6">
+              <img src="{{ url_for('static', filename='images/sam-fogarino.jpg')}}" alt="" class="img-fluid" title="">
+          </div>
+          <div class="col-md-6">
+              <h4 class="oswald">REAL NAME</h4>
+              <h5 class="raleway">Samuel J. Fogarino</h5>
+              <h4 class="oswald">BIRTH</h4>
+              <h5 class="raleway">August 9, 1968</h5>
+              <h4 class="oswald">OCCUPATION</h4>
+              <h5 class="raleway">Drummer</h5>
+              <h4 class="oswald">BIOGRAPHY</h4>
+              <h5 class="raleway">Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. Voluptatum blanditiis tenetur nihil nesciunt ad optio harum atque numquam deserunt vel modi, 
+                asperiores itaque unde voluptas nam reprehenderit. Alias, ipsa adipisci!Cumque porro tempora facilis quisquam quam id enim sequi. 
+                Sunt cumque laudantium eaque, sit, architecto modi, hic perspiciatis assumenda excepturi vitae nostrum suscipit maxime molestiae 
+                rem eius ipsum? Natus, consequatur.
+              </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
