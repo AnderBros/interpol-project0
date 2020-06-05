@@ -86,28 +86,37 @@ video {
     background-color: #1F1F1F;
     padding: 7.14286rem 0;
     color: $secondary-color;
-
-    .container .col-md-6:last-child {
-        position: relative;
-    }
-
-    .container .col-md-6:last-child #ep-info {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        height: 30%;
-        width: 50%;
-        margin: -15% 0 0 -25%;
-    }
 }
 
 .albums img {
     margin-bottom: 20px;
+    -webkit-transition:all .2s; 
+    -moz-transition:all .2s;
+}
+
+.albums img:hover {
+    z-index: 1;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
 }
 
 .members h2:hover{
     cursor: pointer;
     color: #d71818;
+}
+
+.members figure .zoom{
+    overflow: hidden;
+
+    img{
+        transition: all 0.3s ease 0s;
+    }
+}
+
+.members figure:hover img{
+    -ms-transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
 }
 
 .block-black {
@@ -200,6 +209,35 @@ footer {
     }
 }
 
+.btn{
+    border-bottom: 2px solid $primary-color;
+    display: inline-block;
+    padding: 0 .85714rem .71429rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#ep .container > div:last-child > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li > a {
+        width: 100%;
+        color: $secondary-color;
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+    }
+
+    li > a:hover{
+        color: $primary-color;
+    }
+}
+
+#ep .container>div:last-child>ul>li+li{
+    margin-top: 2.14286rem;
+}
+
 @media screen and (max-width: 1125px){
     .absolute > h1 {
         font-size: 250px;
@@ -255,46 +293,54 @@ footer {
     }
 }
 
-@media (max-width: 640px){
+@media screen and (max-width: 640px){
     .social-icon {
         margin: 7px;
     }
 }
 
-@media screen and (max-width: 767px){
-    #ep .container > div:last-child > ul > li > a {
-        width: 17.85714rem;
+@media screen and (max-width: 585px){
+    #ep h1{
+        font-size: 50px;
     }
 }
 
-
-
-.btn{
-    border-bottom: 2px solid $primary-color;
-    display: inline-block;
-    padding: 0 .85714rem .71429rem;
-    text-align: center;
-    vertical-align: middle;
-}
-
-#ep .container > div:last-child > ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    li > a {
-        width: 100%;
-        color: $secondary-color;
-        font-family: 'Oswald', sans-serif;
-        text-transform: uppercase;
-    }
-
-    li > a:hover{
-        color: $primary-color;
+@media screen and (max-width: 485px){
+    #ep h1{
+        font-size: 40px;
     }
 }
 
-#ep .container>div:last-child>ul>li+li{
-    margin-top: 2.14286rem;
+@media screen and (max-width: 375px){
+    #ep h1{
+        font-size: 30px;
+    }
 }
 
+@media screen and (max-width: 360px){
+    #ep h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #ep h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    #ep .container {
+        display: grid !important;
+
+        div:last-child>ul{
+            padding-top: 1.42857rem;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+    .albums figure{
+        pointer-events: none;
+    }
+}
