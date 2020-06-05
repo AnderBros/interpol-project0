@@ -90,14 +90,12 @@ video {
 
 .albums img {
     margin-bottom: 20px;
-    -webkit-transition:all .2s; 
-    -moz-transition:all .2s;
+    transition:all .2s;
 }
 
 .albums img:hover {
     z-index: 1;
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .members h2:hover{
